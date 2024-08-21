@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>juliya.dev on Juliya Gannon&#39;s Website</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content in juliya.dev on Juliya Gannon&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
       <language>en</language>
       <copyright>©</copyright>
-      <lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Test Post</title>
-      <link>//localhost:1313/blog/new-test/</link>
+      <link>/blog/new-test/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
 
-      <guid>//localhost:1313/blog/new-test/</guid>
+      <guid>/blog/new-test/</guid>
       <description>THIS IS A NEW, and IMPROVED BLOG POST
 No Current Mood but keep Spotify Embed
 https://open.spotify.com/track/3sYwntoSCNwkX1ofWZ74ih?si=14aac11d3b794a6a
@@ -83,7 +83,7 @@ Lang: toml Copy code box Footnote&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;box&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
   &lt;figure class=&#34;left&#34;&gt;
-    &lt;img src=&#34;//localhost:1313/images/larz.png&#34;   /&gt;
+    &lt;img src=&#34;/images/larz.png&#34;   /&gt;
   &lt;/figure&gt;
 
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
@@ -98,10 +98,10 @@ Lang: toml Copy code box Footnote&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description
     </item>
     <item>
       <title>Test Post</title>
-      <link>//localhost:1313/blog/test/</link>
+      <link>/blog/test/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
 
-      <guid>//localhost:1313/blog/test/</guid>
+      <guid>/blog/test/</guid>
       <description>TEST BLOG POST
 You aint gotta say too much
 Plain ass MARKDOWN Text</description>
@@ -112,10 +112,10 @@ Plain ass MARKDOWN Text</description>
     </item>
     <item>
       <title>CV</title>
-      <link>//localhost:1313/cv/</link>
+      <link>/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 
-      <guid>//localhost:1313/cv/</guid>
+      <guid>/cv/</guid>
       <description>Experience Redheads Studios July 2024 – Present Founder/CEO Austin, Texas Created Redheads, a creative development studio in Austin, Texas. Technologies: Go, HTML/CSS, C++, Python, and more!
 Freelancing 2012 – Present Full-Stack Dev San, Antonio &amp;#43; Austin, Texas Worked as a Freelance Dev for over a decade. Technologies: HTML/CSS, Ruby, Jekyll, Sass, etc.
 Education Self-Taught Aug 2012 - Present Self-Taught Motivation and Real-Life Experience San Antonio, Texas Technical Skills Languages: All, can learn anything given enough time</description>
