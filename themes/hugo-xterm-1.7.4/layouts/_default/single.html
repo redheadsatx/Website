@@ -1,0 +1,59 @@
+{{- define "main" -}}
+  <article class="post">
+    <header class="post-header">
+      <center>
+      {{- if .Title }}
+        <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
+      {{- end }}
+            {{- with .Params.Description }}
+        <p class="post-description">{{ . }}</p>
+      {{- end }}
+      {{- if .Params.tags }}
+        <p class="post-tags">&nbsp; {{- range .Params.tags -}}#<a href="{{ (urlize (printf "tags/%s/" .)) | absLangURL }}">{{ . }}</a>&nbsp;{{- end -}}</p>
+        </center>
+<hr>
+    </header>
+    {{- end }}
+
+    {{- with .Content }}
+      <div class="post-content">
+        {{ . }}
+      </div>
+    {{- end }}
+<hr>
+      <!-- Display Current Mood -->
+      <center>
+  {{ if .Params.mood }}
+    <div class="current-mood">
+      <h3>⥊ Current Mood ⥋</h3>
+      <p><i> {{ .Params.moodtext }} </i></p>
+      <div class="mood">
+      <img src="{{ .Params.mood }}" alt="{{ .Params.moodtext }}">
+    </div>
+    </div>
+  {{ end }}
+
+            <!-- Display Spotify Song -->
+  {{ if .Params.song }}
+    <div class="song">
+      <h5>Currently Listening:</h5>
+      <iframe src="https://open.spotify.com/embed/{{ (index (split .Params.song ":") 1) }}/{{ (index (split .Params.song ":") 2) }}"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  {{ end }}
+
+     {{- if or (.Params.Date) (.Params.Author) }}
+        <div class="post-meta">
+          {{- with .Params.Date }}
+            <time pubdate datetime="{{ .Format "01-02-2006" }}">
+              Posted on
+              <b>{{ .Format "01-02-2006" }}</b>
+            </time>
+          {{- end }}
+          {{- with .Params.Author }}
+            <span>by <b>{{ . }}</b></span>
+          {{- end }}
+        </div>
+      {{- end }}
+  </center>
+  </article>
+{{- end -}}

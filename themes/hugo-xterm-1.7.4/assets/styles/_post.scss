@@ -1,0 +1,146 @@
+.post {
+  width: 100%;
+  text-align: left;
+  margin: $spacer-small 0;
+
+  @media print {
+    margin: 0 0 $spacer-smallest 0;
+  }
+
+  &-entries {
+    .item {
+      padding-bottom: $spacer-smallest;
+      margin-bottom: $spacer-smallest;
+
+      p {
+        margin: 0;
+      }
+
+      h2,
+      h3 {
+        border-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  &-header {
+    margin: $spacer-smallest 0;
+
+    @media print {
+      margin: 0;
+    }
+  }
+
+  &-title {
+    $border-title: $spacer-smallest;
+    text-decoration: none;
+
+    position: relative;
+    border-bottom: $border-title dotted;
+    width: 100%;
+    padding-bottom: $spacer-smallest;
+
+    @include themed {
+      border-color: t($accent);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: $spacer-smallest;
+      display: inline-block;
+      width: 100%;
+      border-bottom: $border-title;
+
+      @include themed {
+        border-color: t($accent);
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      @media print {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-meta,
+  &-tags {
+    font-size: $font-size-smaller;
+    margin: $spacer-smallest 0;
+
+    @include themed {
+      color: t($text-accent);
+    }
+
+    a {
+      @media print {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-description {
+    font-size: $font-size-smaller;
+    font-weight: $font-light;
+
+    @include themed {
+      color: t($text-brighter);
+    }
+  }
+
+  &-toc {
+    margin: $spacer-smallest 0;
+
+    @media print {
+      display: none;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 0;
+    }
+  }
+
+  &-cover {
+    border: $spacer-smallest solid $accent;
+    background: transparent;
+    margin: $spacer-smallest 0;
+    padding: $spacer-smallest;
+
+    @media ($phone) {
+      padding: $spacer-smallest;
+      border-width: $spacer-smallest;
+    }
+  }
+
+  &-footer {
+    margin: $spacer-normal 0;
+
+    @media print {
+      margin: $spacer-smallest 0 0 0;
+    }
+  }
+
+  &-support {
+    font-style: italic;
+    margin: $spacer-smallest 0;
+    border-top: $spacer-1 solid;
+
+    @include themed {
+      border-color: t($accent);
+    }
+
+    @media print {
+      margin: $spacer-smallest 0;
+    }
+  }
+}

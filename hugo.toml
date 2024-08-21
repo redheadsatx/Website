@@ -1,0 +1,74 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = "Juliya Gannon's Website"
+theme = 'hugo-xterm-1.7.4'
+pluralizelisttitles = false
+canonifyURLs = true
+paginate = 20
+
+[params]
+    showBreadCrumbs = true
+    showMenuItems = true
+    centerTheme = true
+    favicon = "/images/redcorpse.png"
+    toc = true
+	
+    copyrightUserURL = "https://juliya.dev/"
+    copyrightUserText = "Juliya"
+    banner = "/images/juliya.png"
+	
+    mood = 'image.png'
+    song = 'SONGID'
+
+
+
+[languages]
+  [languages.en.params]
+    	copyright = "©"
+    	readOtherPosts = "Read More"
+    	missingContentMessage = "Lost to the Ether"
+    	missingBackButtonLabel = "Back 2 Safety"
+
+    [languages.en.params.logo]
+      logoText = "home"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "cv"
+        name = "CV"
+        url = "/cv/"
+
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Blog"
+        url = "/blog/"
+
+
+googleAnalytics = "G-XXXXXXXXXX"
+enableGitInfo = true
+
+[params.git_info]
+  host = "github"
+  user = "mothralady"
+  repo = "https://github.com/redheadsatx/Website"
+
+
+    [params.author]
+        email = 'juliyagannon@proton.me'
+        name = 'Juliya Gannon'
+
+    [params.contact]
+        email = 'juliyagannon@proton.me'
+
+
+[services]
+  [services.rss]
+    limit = 20
+
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
+

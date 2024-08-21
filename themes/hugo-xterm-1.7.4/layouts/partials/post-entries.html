@@ -1,0 +1,27 @@
+{{- $paginator := .Paginate .Pages -}}
+
+<div class="post-entries">
+  {{- range $paginator.Pages }}
+    <div class="item">
+      {{- /* list item */ -}}
+      <a href="{{ .Permalink }}">
+        {{- if .Title -}}
+          <h3>
+            ⥊ {{- .Title | markdownify -}} ⥋
+          </h3>
+        {{- else -}}
+          {{- .File.TranslationBaseName | markdownify -}}
+        {{- end -}}
+      </a>
+      {{- if and (not .IsSection) (or .Date .Params.Author) -}}
+        <p class="post-meta">
+          {{- with .Date -}}
+            <span>{{ .Format "01-02-2006" -}}</span>
+          {{- end -}}
+          {{- with .Params.Author -}}
+            <span> | {{ . }}</span>
+          {{- end -}}
+        </p>
+      {{- end -}}
+      </div>
+  {{- end }}
